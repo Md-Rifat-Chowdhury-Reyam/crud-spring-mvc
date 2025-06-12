@@ -75,6 +75,7 @@
 
     <build>
         <plugins>
+
             <!-- Maven Compiler Plugin (JDK 17) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -90,16 +91,16 @@
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
-            <build>
-                <plugins>
-                    <!-- Add this plugin if missing -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <version>3.2.5</version>
-                    </plugin>
-                </plugins>
-            </build>
+
+
+            <!-- Add this plugin if missing -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+
+
 
             <!-- Spring Boot Maven Plugin -->
             <plugin>
